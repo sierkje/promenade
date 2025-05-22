@@ -1,0 +1,13 @@
+{
+  "extends": ["//"],
+  "tasks": {
+    "build": {},
+    "dev": {},
+    "lint": {
+      "env": ["TAURI_DEV_HOST"]
+    },
+    "preview": {},
+    "tauri": {},
+    "typecheck": {}
+  }
+}

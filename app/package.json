@@ -1,0 +1,36 @@
+{
+  "private": true,
+  "name": "app",
+  "type": "module",
+  "scripts": {
+    "build": "tsc && vite build",
+    "dev": "vite",
+    "lint": "run-p lint:*",
+    "lint:css": "stylelint --cache --cache-location ./node_modules/.cache/stylelint --fix '**/*.{css,scss}'",
+    "lint:js": "eslint --cache --cache-location ./node_modules/.cache/eslint --max-warnings 0 --fix .",
+    "preview": "vite preview",
+    "tauri": "tauri",
+    "typecheck": "tsc"
+  },
+  "dependencies": {
+    "@tauri-apps/api": "catalog:",
+    "@tauri-apps/plugin-opener": "catalog:",
+    "react": "catalog:",
+    "react-dom": "catalog:"
+  },
+  "devDependencies": {
+    "@repo/eslint-config": "workspace:*",
+    "@repo/stylelint-config": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
+    "@tauri-apps/cli": "catalog:",
+    "@types/react": "catalog:",
+    "@types/react-dom": "catalog:",
+    "@vitejs/plugin-react": "catalog:",
+    "eslint": "catalog:",
+    "npm-run-all2": "catalog:",
+    "stylelint": "catalog:",
+    "tailwindcss": "catalog:",
+    "typescript": "catalog:",
+    "vite": "catalog:"
+  }
+}

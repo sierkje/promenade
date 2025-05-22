@@ -1,0 +1,20 @@
+{
+  "recommendations": [
+    "antfu.pnpm-catalog-lens",
+    "bradlc.vscode-tailwindcss",
+    "chavyleung.vscode-pnpm-verlens",
+    "davidanson.vscode-markdownlint",
+    "dbaeumer.vscode-eslint",
+    "editorconfig.editorconfig",
+    "esbenp.prettier-vscode",
+    "henrynguyen5-vsc.vsc-nvm",
+    "jacano.vscode-pnpm",
+    "redhat.vscode-yaml",
+    "rust-lang.rust-analyzer",
+    "stylelint.vscode-stylelint",
+    "tauri-apps.tauri-vscode",
+    "unional.vscode-sort-package-json",
+    "vercel.turbo-vsc",
+    "formulahendry.auto-rename-tag"
+  ]
+}

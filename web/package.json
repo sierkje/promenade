@@ -1,0 +1,43 @@
+{
+  "private": true,
+  "name": "web",
+  "type": "module",
+  "scripts": {
+    "build": "react-router build && node netlify/prepare.js",
+    "dev": "cross-env NODE_ENV=development node ./dev-server.js",
+    "lint": "run-p lint:*",
+    "lint:css": "stylelint --cache --cache-location ./node_modules/.cache/stylelint --fix '**/*.{css,scss}'",
+    "lint:js": "eslint --cache --cache-location ./node_modules/.cache/eslint --max-warnings 0 --fix .",
+    "start": "netlify serve",
+    "typecheck": "react-router typegen && tsc"
+  },
+  "dependencies": {
+    "@netlify/functions": "catalog:",
+    "@react-router/node": "catalog:",
+    "isbot": "catalog:",
+    "react": "catalog:",
+    "react-dom": "catalog:",
+    "react-router": "catalog:"
+  },
+  "devDependencies": {
+    "@mjackson/node-fetch-server": "catalog:",
+    "@react-router/dev": "catalog:",
+    "@repo/eslint-config": "workspace:*",
+    "@repo/stylelint-config": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
+    "@tailwindcss/vite": "catalog:",
+    "@types/express": "catalog:",
+    "@types/react": "catalog:",
+    "@types/react-dom": "catalog:",
+    "cross-env": "catalog:",
+    "eslint": "catalog:",
+    "express": "catalog:",
+    "netlify-cli": "catalog:",
+    "npm-run-all2": "catalog:",
+    "stylelint": "catalog:",
+    "tailwindcss": "catalog:",
+    "typescript": "catalog:",
+    "vite": "catalog:",
+    "vite-tsconfig-paths": "catalog:"
+  }
+}

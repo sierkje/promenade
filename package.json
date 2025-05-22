@@ -1,0 +1,41 @@
+{
+  "private": true,
+  "name": "promenade-monorepo",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sierkje/promenade.git"
+  },
+  "license": "MIT",
+  "scripts": {
+    "app:build": "turbo run app#build",
+    "app:dev": "turbo run app#dev",
+    "app:preview": "turbo run app#preview",
+    "format": "prettier --write --list-different .",
+    "lint": "turbo run lint",
+    "prepare": "husky",
+    "tauri": "turbo run app#tauri",
+    "typecheck": "turbo run typecheck",
+    "web:build": "turbo run web#build",
+    "web:dev": "turbo run web#dev"
+  },
+  "packageManager": "pnpm@10.11.0",
+  "engines": {
+    "node": ">=24.0.0",
+    "pnpm": ">=10.0.0"
+  },
+  "prettier": {
+    "plugins": [
+      "prettier-plugin-sort-package-json"
+    ]
+  },
+  "devDependencies": {
+    "husky": "catalog:",
+    "lint-staged": "catalog:",
+    "prettier": "catalog:",
+    "prettier-plugin-sort-package-json": "catalog:",
+    "turbo": "catalog:"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,html,css,md,json,yml,yaml}": "prettier --write"
+  }
+}
